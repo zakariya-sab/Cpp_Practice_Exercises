@@ -1,0 +1,28 @@
+//Sum 3 Numbers
+#include <iostream>
+#include <cmath>
+#include <string>
+using namespace std ;
+
+void read_numbe(float & nbr1,float &nbr2,float &nbr3){
+    cout << "Enter nbr1  = ";
+    cin >> nbr1;
+    cout << "Enter nbr2  = ";
+    cin >> nbr2;
+    cout << "Enter nbr3  = ";
+    cin >> nbr3;
+}
+
+float sum( float nbr1 , float nbr2 ,float nbr3){
+    return (float)(nbr1+nbr2+nbr3);
+}
+ void print_result(float result){
+    cout << "the result = "<<result;
+}
+
+int main ()
+{
+    float a,b,c;
+    read_numbe(a,b,c);
+    print_result(sum(a,b,c));
+}
